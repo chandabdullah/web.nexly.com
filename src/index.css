@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-skybrand-200;
+  }
+
+  body {
+    @apply min-h-screen bg-[#f7fbff] font-sans text-slate-900 antialiased;
+  }
+
+  html[data-theme='dark'] body {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  button,
+  input {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/50 bg-white/80 backdrop-blur-xl;
+  }
+
+  .hero-orb {
+    @apply pointer-events-none absolute rounded-full bg-white/20;
+  }
+
+  .section-shell {
+    @apply relative overflow-hidden rounded-[2rem] border border-white/50 bg-white/80 shadow-[0_14px_34px_rgba(15,23,42,0.05)] backdrop-blur-xl;
+  }
+}

@@ -1,0 +1,27 @@
+# React + Vite + Tailwind CSS Development Rules
+
+## Core Principles
+- Build scalable and modular React applications using Vite and Tailwind CSS.
+- Strictly adhere to responsive design principles for all screen sizes (mobile, tablet, desktop, ultra-wide).
+- Ensure zero comments in code. Code should be self-documenting through clear naming conventions.
+
+## Code Constraints
+- Maximum file length: 400 lines. If a file exceeds this limit, refactor into smaller, focused modules or components.
+- No code comments allowed. Do not include any `//` and `/* */` style comments in any code files.
+
+## Project Structure & Modularity
+- Follow a modular project structure (e.g., `src/components`, `src/pages`, `src/hooks`, `src/utils`, `src/assets`).
+- Ensure each file strictly serves a single responsibility.
+- Extract layout complexities into reusable wrapper components.
+
+## Styling & Responsiveness
+- Use Tailwind CSS exclusively for styling.
+- All screens, pages, and components MUST be fully responsive and adapt gracefully to all dimensions.
+- Explicitly handle responsive sizing using Tailwind's breakpoint prefixes (`sm:`, `md:`, `lg:`, `xl:`, `2xl:`).
+- Start with a mobile-first design approach and scale up.
+
+## Component & Logic Guidelines
+- Use React functional components.
+- Extract complex state management or side-effects into custom hooks.
+- Destructure props cleanly.
+- Maintain strict type safety or props validation if applicable.
